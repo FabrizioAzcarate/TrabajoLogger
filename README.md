@@ -1,5 +1,7 @@
 # API Status - Trabajo Práctico
 
+Aplicación API REST desarrollada con Python, Flask y logging.
+
 El proyecto implementa distintos endpoints HTTP para simular respuestas de estado, manejo de errores, guardado de datos en memoria y sistema de logs.
 
 ---
@@ -7,50 +9,16 @@ El proyecto implementa distintos endpoints HTTP para simular respuestas de estad
 # Requisitos
 
 Antes de ejecutar el proyecto es necesario tener instalado:
-- Node.js + npm
-- Python 3 + pip
+- Python 3
+- pip
+- Thunder Client para probar los endpoints (opcional)
 
 Extensión utilizada para pruebas:
-
 - Thunder Client
 
 ---
 
-# Versión Node.js
-
-## Instalación
-
-Entrar a la carpeta del proyecto:
-
-```bash
-cd api-status
-```
-
-Instalar dependencias:
-
-```bash
-npm install
-```
-
----
-
-## Ejecutar proyecto
-
-```bash
-npm start
-```
-
-El servidor va a iniciar en:
-
-```text
-http://localhost:3000
-```
-
----
-
-# Versión Python
-
-## Instalación
+# Instalación
 
 Entrar a la carpeta del proyecto:
 
@@ -60,16 +28,16 @@ cd api-status-python
 
 ---
 
-## Crear entorno virtual
+# Crear entorno virtual
 
-### Windows
+## Windows
 
 ```bash
 python -m venv venv
 venv\Scripts\activate
 ```
 
-### Linux/Mac
+## Linux / Mac
 
 ```bash
 python3 -m venv venv
@@ -78,7 +46,9 @@ source venv/bin/activate
 
 ---
 
-## Instalar dependencias
+# Instalar las dependencias
+
+Con el entorno virtual activado ejecutar:
 
 ```bash
 pip install flask
@@ -86,15 +56,15 @@ pip install flask
 
 ---
 
-## Ejecutar proyecto
+# Ejecutar el proyecto
 
-### Windows
+## Windows
 
 ```bash
 python app.py
 ```
 
-### Linux/Mac
+## Linux / Mac
 
 ```bash
 python3 app.py
@@ -171,25 +141,7 @@ Devuelve todos los registros guardados.
 
 # Logs
 
-## Node.js
-
-La versión Node.js utiliza Winston para registrar:
-
-- Fecha
-- Nivel del log
-- Mensaje
-
-Ejemplo:
-
-```text
-[2026-05-05 15:30:00] INFO: Servidor ejecutándose en http://localhost:3000
-```
-
----
-
-## Python
-
-La versión Python utiliza logging para registrar:
+La aplicación utiliza la librería logging para registrar:
 
 - Fecha
 - Nivel del log
@@ -213,6 +165,7 @@ Los endpoints fueron probados utilizando:
 ---
 
 # Funcionalidades implementadas
+
 - API REST
 - Endpoints GET y POST
 - Base de datos simulada en memoria
@@ -220,3 +173,4 @@ Los endpoints fueron probados utilizando:
 - Simulación de error 500
 - Logging en consola
 - Manejo de excepciones
+- Compatibilidad con Windows, Linux y Mac
